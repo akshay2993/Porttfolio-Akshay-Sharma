@@ -1,0 +1,90 @@
+.skills__container {
+  grid-template-columns: repeat(2, 350px);
+  row-gap: 3rem !important;
+  justify-content: center;
+}
+.skills__content {
+  background-color: var(--container-color);
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+}
+.skills__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+.skills__group {
+  display: grid;
+  grid-template-columns: ;
+  align-items: flex-start;
+  row-gap: 1.5rem;
+}
+.skills__data {
+  display: flex;
+  column-gap: 0.5rem;
+}
+.skills .bx.bx-badge-check {
+  font-size: 1rem;
+  color: var(--title-color);
+}
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.skills__level {
+  font-size: var(--tiny-font-size);
+  color: var(--title-color);
+}
+
+.skills__image{
+  /* filter: grayscale(100%); */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  transition: 0.3s;
+  object-fit: contain;
+}
+
+.skills__image:hover{
+  /* filter: grayscale(100%); */
+  transform: scale(1.3);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .skills__container {
+    grid-template-columns: max-content;
+    row-gap: 2rem !important;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+  .skills__content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .skills__box {
+    column-gap: 1.25rem;
+  }
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+}

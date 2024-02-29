@@ -1,0 +1,16 @@
+import Html from './html.png'
+import Css from './Css.png'
+import Js from './javascript.png'
+import Bootstrap from './bootstrap.png'
+import Express from './express.png'
+import Git from './git.png'
+import Github from './github.png'
+import Mongodb from './mongodb.png'
+import NodeJs from './nodejs.png'
+import Npm from './npm.png'
+import Postman from './postman.png'
+import React from './react.png'
+import Sass from './sass.png'
+import Tailwind from './tailwindcss.png'
+
+export { Html, Css, Js, Bootstrap, Express, Git, Github, Mongodb, NodeJs, Npm, Postman, React, Sass, Tailwind }
